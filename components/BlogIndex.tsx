@@ -38,7 +38,7 @@ export default function BlogIndex({ posts }: { posts: Post[] }) {
         {filteredPosts.map(post => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="b-card">
             <div className="b-body">
-              <div className="b-tag">// {post.tag}</div>
+              <div className="b-tag">{`// ${post.tag}`}</div>
               <div className="b-title">{post.title}</div>
               <div className="b-excerpt">{post.excerpt}</div>
               <div className="b-date">{post.date}</div>

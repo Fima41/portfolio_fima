@@ -69,7 +69,6 @@ export default function HeroViz() {
   function startTypewriter(p: PhaseKey) {
     if (timerRef.current) clearInterval(timerRef.current);
     let i = 0;
-    setCount(0);
     timerRef.current = setInterval(() => {
       i++;
       setCount(i);
@@ -88,6 +87,7 @@ export default function HeroViz() {
     setTimeout(() => {
       setPhase(next);
       setChartVisible(true);
+      setCount(0);
       startTypewriter(next);
     }, 220);
   }
@@ -122,7 +122,7 @@ export default function HeroViz() {
           ))}
         </div>
         <div className="t-chart-wrap" style={{ opacity: chartVisible ? 1 : 0, transition: 'opacity 0.22s ease' }}>
-          <div className="t-clabel">// seasonal_precip_mm · annual_cycle</div>
+          <div className="t-clabel">{'// seasonal_precip_mm · annual_cycle'}</div>
           <svg width="100%" viewBox={`0 0 ${W} ${H}`} style={{ height: 68, display: 'block' }}>
             <defs>
               <linearGradient id="rg" x1="0" y1="0" x2="0" y2="1">

@@ -33,7 +33,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <Link href="/blog" className="back-link">← back to blog</Link>
 
       <header className="post-header">
-        <span className="post-tag">// {postData.tag}</span>
+        <span className="post-tag">{`// ${postData.tag}`}</span>
         <h1 className="post-title">{postData.title}</h1>
         <div className="post-date">{postData.date}</div>
       </header>

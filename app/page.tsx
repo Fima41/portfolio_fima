@@ -180,7 +180,7 @@ export default function Home() {
                 {idx === 2 && <svg width="32" height="32" viewBox="0 0 32 32"><rect x="8" y="20" width="16" height="8" rx="2" fill="none" stroke="#e6a030" strokeWidth="0.75"/><path d="M10 20 Q16 6 22 20" fill="rgba(230,160,48,0.08)" stroke="#e6a030" strokeWidth="0.75"/></svg>}
               </div>
               <div className="b-body">
-                <div className="b-tag">// {post.tag}</div>
+                <div className="b-tag">{`// ${post.tag}`}</div>
                 <div className="b-title">{post.title}</div>
                 <div className="b-date">{post.date}</div>
               </div>

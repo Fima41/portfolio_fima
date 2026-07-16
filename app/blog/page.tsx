@@ -11,7 +11,7 @@ export default function BlogPage() {
   
   return (
     <section className="section">
-      <div className="section-prefix">// technical_writing</div>
+      <div className="section-prefix">{'// technical_writing'}</div>
       <h2 className="section-title">Climate, Data &amp; Systems</h2>
       
       <BlogIndex posts={allPostsData} />

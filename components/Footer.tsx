@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
         <div className="footer-id">
           <div className="footer-name">Fima Sichone</div>
-          <div className="footer-role">// climate_data_scientist · lusaka, zambia</div>
+          <div className="footer-role">{'// climate_data_scientist · lusaka, zambia'}</div>
         </div>
       </div>
 
