@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/portfolio_fima/_next/static/chunks/06y_qpjsl6txg.js","/portfolio_fima/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+3:I[97367,["/portfolio_fima/_next/static/chunks/06y_qpjsl6txg.js","/portfolio_fima/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"article-container","children":[["$","$L2",null,{"href":"/blog","className":"back-link","children":"← back to blog"}],["$","header",null,{"className":"post-header","children":[["$","span",null,{"className":"post-tag","children":"// forecasting"}],["$","h1",null,{"className":"post-title","children":"Seasonal Forecasting Challenges in Sub-Saharan Africa"}],["$","div",null,{"className":"post-date","children":"2025-03-01"}]]}],["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"<p>Content coming soon...</p>\n"}}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GFFfNMCeQlS5lrgo1da9L"}
+5:null

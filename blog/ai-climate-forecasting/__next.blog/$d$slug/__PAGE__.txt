@@ -1,0 +1,31 @@
+1:"$Sreact.fragment"
+2:I[22016,["/portfolio_fima/_next/static/chunks/06y_qpjsl6txg.js","/portfolio_fima/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+4:I[97367,["/portfolio_fima/_next/static/chunks/06y_qpjsl6txg.js","/portfolio_fima/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+3:T9ad,<h2>The forecasting gap in sub-Saharan Africa</h2>
+<p>In many parts of sub-Saharan Africa, reliable weather forecasting remains a significant challenge. Traditional Numerical Weather Prediction (NWP) models, often developed and tuned for mid-latitude regions, frequently struggle to capture the complex convective processes that drive weather patterns in the tropics and sub-tropics.</p>
+<p>This "forecasting gap" has real-world consequences, particularly for agricultural sectors that rely on accurate seasonal outlooks to make planting and harvesting decisions. Without high-resolution, locally-adapted models, many smallholder farmers are left vulnerable to increasingly erratic climate patterns.</p>
+<h2>Where machine learning fits in</h2>
+<p>Machine learning offers a powerful set of tools to bridge this gap. Rather than relying solely on the physics of the atmosphere, ML approaches can learn complex, non-linear relationships directly from historical data. This is particularly useful for tasks like statistical downscaling, where global model outputs are mapped to local station observations.</p>
+<p>Beyond downscaling, seasonal prediction models using techniques like Random Forests or XGBoost are showing promise in identifying teleconnections—such as the influence of the El Niño Southern Oscillation (ENSO)—that are often muted in traditional dynamical models.</p>
+<pre><code class="language-python">from sklearn.ensemble import RandomForestRegressor
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+
+# Simple bias correction pipeline
+pipeline = Pipeline([
+    ('scaler', StandardScaler()),
+    ('model', RandomForestRegressor(n_estimators=100))
+])
+
+# X: Global Model Outputs, y: Ground Truth Station Data
+pipeline.fit(X_train, y_train)
+y_corrected = pipeline.predict(X_test)
+</code></pre>
+<blockquote>
+<p>"The challenge isn't just the algorithms; it's the data scarcity. We are learning to build intelligent systems that can do more with less, leveraging satellite products like CHIRPS to augment our sparse station networks."</p>
+</blockquote>
+<h2>What comes next</h2>
+<p>The future of climate forecasting in Africa lies in hybrid systems—integrating the physical consistency of NWP models with the pattern-recognition capabilities of deep learning. As we improve our data infrastructure and ingestion pipelines, these systems will become the backbone of early warning platforms across the continent.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"article-container","children":[["$","$L2",null,{"href":"/blog","className":"back-link","children":"← back to blog"}],["$","header",null,{"className":"post-header","children":[["$","span",null,{"className":"post-tag","children":"// ai + climate"}],["$","h1",null,{"className":"post-title","children":"AI for Climate Forecasting in Africa: Where We Are"}],["$","div",null,{"className":"post-date","children":"2025-01-15"}]]}],["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$3"}}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GFFfNMCeQlS5lrgo1da9L"}
+6:null
